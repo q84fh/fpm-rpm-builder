@@ -5,7 +5,7 @@ RUN groupadd -g 1001 build && useradd -u 1001 -g 1001 build
 
 RUN set -x \
     && apt update -y \
-    && apt install rubygems ruby-dev squashfs-tools rpm -y \
+    && apt install git binutils rubygems ruby-dev squashfs-tools rpm -y \
     && gem install fpm \
     && mkdir /src
 
